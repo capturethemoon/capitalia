@@ -28,7 +28,7 @@ Less than $0 has a red font color.
 To not lose more than the initial amount of money that you started with.
 
 **Programming Languages:** 
-HTML, CSS, JavaScript, Python
+HTML, CSS, Bootstrap, JavaScript, Python
 
 
 
