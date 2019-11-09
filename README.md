@@ -20,7 +20,7 @@ For $0-$3,000, the font color is orange.
 Less than $0 has a red font color.
 
 **End goal:** 
-To not lose money (to not lose more than the initial amount of money that you started with).
+To not lose more than the initial amount of money that you started with.
 
 **Programming Languages:** 
 HTML, CSS, JavaScript, Python
