@@ -1,6 +1,8 @@
 # capitalia
 Project for Technica 2019
 
+**Intro:**
+
   *You are a venture capitalist.*
 
   *You start out with $3000.*
@@ -33,4 +35,6 @@ To not lose more than the initial amount of money that you started with.
 
 **Programming Languages:** 
 HTML, CSS, JavaScript, Python
+
+
 
