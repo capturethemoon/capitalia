@@ -15,7 +15,11 @@ It will have a detailed explanation of
 Running tally of how much money they have left
 At the end of the simulation (5 rounds), it will tell you how much money you’ve accumulated
 
-*If you have > 3000, color = green, between 0-3000 = orange, < 0 = red*
+**Color Indicators Based on Current Dollar Amount**
+The font color changes for the amount of money that you have, based on how much or how little money you have.
+If you have more than $3,000, the font color is green.
+For $0-$3,000, the font color is orange. 
+Less than $0 has a red font color.
 
 **End goal:** 
 To not lose money (to not lose more than the initial amount of money that you started with).
