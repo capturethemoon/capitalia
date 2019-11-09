@@ -1,6 +1,15 @@
 # capitalia
 Project for Technica 2019
 
+  *You are a venture capitalist.*
+
+  *You start out with $3000.*
+  
+  *You have five chances to figure out the best way to spend/invest the money.*
+  
+  *Watch how the market changes.*
+
+
 **Target:** 
 For people who want to educate themselves about finance and business. 
 
@@ -9,7 +18,7 @@ The purpose of the game is to educate users about different investment options. 
 
 **Steps of the game:**
 The user chooses a name/type of business. They start with $3,000 in the bank.
-They can choose from five different investment options.
+They can choose from three different investment options.
 Once they click on one option, their amount of money will be recalculated, based on fluctations in the stock market.
 At the end of the simulation (five rounds), it will tell you how much money you’ve accumulated.
 
