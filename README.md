@@ -1,7 +1,6 @@
 # capitalia
 Project for Technica 2019
 
-**Intro:**
   *You are a venture capitalist.*
   *You start out with $3000.*
   *You have five chances to figure out the best way to spend/invest the money.*
