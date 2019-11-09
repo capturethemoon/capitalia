@@ -5,7 +5,7 @@ Project for Technica 2019
 For people who want to educate themselves about finance and business. 
 
 **Purpose:** 
-The purpose of the game is to educate users about different investment options. The game also helps users to understand the overall volatility of the stock market.
+The purpose of the game is to educate users about different investment options. The game also helps users to understand the potential volatility of the stock market.
 
 **Steps of the game:**
 The user chooses a name/type of business. They start with $3,000 in the bank.
