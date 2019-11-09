@@ -1,7 +1,7 @@
 # capitalia
 Project for Technica 2019
 
-Target: for people who want to educate themselves in business (don’t know much about it)
+Target: For people who want to educate themselves about finance and business. 
 
 Purpose: The purpose of the game is to educate users about different investment options. The game also helps users to understand the overall volatility of the stock market.
 
@@ -15,7 +15,7 @@ At the end of the simulation (5 rounds), it will tell you how much money you’v
 
 If you have > 3000, color = green, between 0-3000 = orange, < 0 = red
 
-End goal: To not lose money, to not lose more than initial money
+End goal: To not lose money (to not lose more than the initial amount of money that you started with).
 
 Programming Languages: HTML, CSS, JavaScript, Python
 
