@@ -8,12 +8,10 @@ For people who want to educate themselves about finance and business.
 The purpose of the game is to educate users about different investment options. The game also helps users to understand the overall volatility of the stock market.
 
 **Steps of the game:**
-People decide on a name/type of business
-They click on 5 different investment options
-Once they click one, it will change the stock market
-It will have a detailed explanation of 
-Running tally of how much money they have left
-At the end of the simulation (5 rounds), it will tell you how much money you’ve accumulated
+The user chooses a name/type of business. They start with $3,000 in the bank.
+They can choose from five different investment options.
+Once they click on one option, their amount of money will be recalculated, based on fluctations in the stock market.
+At the end of the simulation (five rounds), it will tell you how much money you’ve accumulated.
 
 **Color Indicators Based on Current Dollar Amount**
 The font color changes for the amount of money that you have, based on how much or how little money you have.
