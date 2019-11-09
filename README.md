@@ -1,4 +1,4 @@
-# capitalia (Project for Technica 2019)
+# capitalia 
 
   *You are a venture capitalist.*
   *You start out with $3000.*
