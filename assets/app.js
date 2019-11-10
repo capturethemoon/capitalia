@@ -30,7 +30,7 @@ let depositOptions = [
         riskFactor: 6,
     },
     {
-        name: 'Cyptocurrency',
+        name: 'Cryptocurrency',
         amount: 0,
         riskFactor: 9
     }
@@ -42,6 +42,10 @@ let depositOptions = [
 // Each round we get a new amount they either add or subject from their "bank"
 
 let userBank = 0;
+
+// after checking each investment, push to array, then add total to userAccount at end.
+let currentRound = [];
+let roundTotal = 0;
 
 let userAccount = {
     round1: 0,
@@ -57,6 +61,7 @@ function increaseRisk() {
     });
     console.log("New riskFactor" + entry + ':', entry.riskFactor);
 };
+
 
 
 // at the end of a submit, run this function to see result of all investments
@@ -86,38 +91,46 @@ function determineResult() {
 
 
         //if risk is 3 or less than, add a positive amount
-        if (currentRisk <= 5) {
-            // we add our investment amount plus our current random amount
-            currentTotal = entry.amount + currentResult;
-        } else if (currentResult == 6 < 9) {
-            // we set our current total to be whatever the random number is and not add it to invested amount
-            currentTotal = currentResult;
+        // if (currentRisk <= 5) {
+        //     // we add our investment amount plus our current random amount
+        //     currentTotal = entry.amount + currentResult;
+        //     console.log("first if statement", currentTotal)
+        // } else if (currentResult == 6 < 9) {
+        //     // we set our current total to be whatever the random number is and not add it to invested amount
+        //     currentTotal = currentResult;
+        //     console.log("second if statement", currentTotal);
 
-        } else if (currentResult >= 9) {
-            currentTotal = entry.amount - currentResult;
-        };
+        // } else if (currentResult >= 9) {
+        //     currentTotal = entry.amount - currentResult;
+        //     console.log("third if statement", currentTotal);
+        // };
 
-        // add final total to each round
+        // // add final total to user array of current round
+        // currentRound.push(currentTotal);
 
-        for (let i = 0; i < userAccount.length; i++) {
-            [i] = currentTotal;
-        };
-
-        addRounds();
+        //add all rounds in currentRound array together to get total 
+        // addRounds();
 
     });
 
 };
+
 
 function addRounds() {
 
     const add = (a, b) =>
         parseInt(a) + parseInt(b);
 
-    const sum = userAccount.reduce(add);
+    const sum = currentRound.reduce(add);
     console.log(sum);
 
-    userBank = sum;
+    currentTotal = sum;
+
+    for (let i = 0; i < userAccount; i++) {
+        if (userAccount[i] === 0) {
+            push.userAccount[i](currentTotal);
+        }
+    };
 
 };
 
@@ -128,14 +141,34 @@ $("#user-submit").on("click", (event) => {
     console.log("Button clicked!");
 
     //loop through and update all amounts in the array, then call results function
-    let treasury = document.getElementById("game-form").elements.item(0).value;
+    let savings = document.getElementById("game-form").elements.item(0).value;
 
-    // set the amounts here, then run a function that gives a result
-    // using math random along with riskFactor
+    depositOptions[0].amount = savings;
 
 
-    console.log('This is our treasury deposit', treasury);
-    // console.log(treasuryID);
+    let treasury = document.getElementById("game-form").elements.item(1).value;
+
+    depositOptions[1].amount = treasury;
+
+    let bonds = document.getElementById("game-form").elements.item(2).value;
+
+    depositOptions[2].amount = bonds;
+
+    let mutal = document.getElementById("game-form").elements.item(3).value;
+
+    depositOptions[3].amount = mutal;
+
+    let crypto = document.getElementById("game-form").elements.item(4).value;
+
+    depositOptions[4].amount = crypto;
+
+    
+
+
+    console.log('This is our investments', savings, treasury, bonds, mutal, crypto);
+
+    console.log('This is our savings deposit object', depositOptions);
+
 
 
 
