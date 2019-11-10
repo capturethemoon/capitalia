@@ -1,51 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <!-- <link rel="stylesheet" type="text/css" href="./assets/home.css" /> -->
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <br>
-  <title>capitalia</title></br>
+  <title>Document</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>capitalia</h1>
 
 
-        <p>A game simulator to help you learn about finance and business.</p>
 
-        <br></br>
-        <hr>
-        <h2>Contact Us</h2>
-        <div class="container">
-          <form action="action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <br></br>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            <br></br>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
-            <br></br>
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            <br></br>
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-      </div>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style1.css" />
 
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+  <div class="jumbotron">
+    <div class="jumbotron2">
+      <h1>capitalia</h1>
+
+      <p>A game simulator to help you learn about finance and business.</p><br></br>
+      <h6>Enter a percentage, then click Deposit.</h6>
+      <form id="game-form">
+        Treasury:
+        <input name='treasury' type="text" id='treasury'>
+        <br><br>
+        Bank:
+        <input name='cash' type="text" id='cash'>
+        <br><br>
+        Bonds:
+        <input name='bonds' type='bonds'>
+        <br><br>
+        Mutual Funds:
+        <input name='mutual-funds' type="text" id='mutual-funds'>
+        <br><br>
+        Cryptocurrency:
+        <input name="Cryptocurrency" type="text" id="crypto">
+        <br><br>
+        <input type="submit" value="deposit" id="user-submit">
+      </form>
     </div>
-</body>
-<script src="assets/app.js"></script>
+  </div>
+
+
+  <script src="assets/app.js"></script>
 </body>
 
 </html>
