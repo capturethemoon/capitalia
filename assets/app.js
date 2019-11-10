@@ -63,6 +63,13 @@ function increaseRisk() {
 };
 
 
+// But we don't want it to be too random?
+// Will either get a negative or positive amount back, random between investment
+// Something like if risk factor is 0-3, 
+
+// Lowest, you make money
+// Middle nothing happens
+//Highest, you loose money
 
 // at the end of a submit, run this function to see result of all investments
 function determineResult() {
@@ -76,37 +83,33 @@ function determineResult() {
         let currentDeposit = entry.amount;
         let currentRisk = entry.riskFactor;
 
+        // Math.floor(Math.random() * Math.floor(max));
+
 
         // each time we run this, they get a random number back, between 0 and the value invested
-        let currentResult = Math.random(currentDeposit);
+        let currentResult = Math.floor(Math.random() * Math.floor(currentDeposit));
         console.log("Our current random investment result", currentResult);
 
-        // But we don't want it to be too random?
-        // Will either get a negative or positive amount back, random between investment
-        // Something like if risk factor is 0-3, 
-
-        // Lowest, you make money
-        // Middle nothing happens
-        //Highest, you loose money
 
 
-        //if risk is 3 or less than, add a positive amount
-        // if (currentRisk <= 5) {
-        //     // we add our investment amount plus our current random amount
-        //     currentTotal = entry.amount + currentResult;
-        //     console.log("first if statement", currentTotal)
-        // } else if (currentResult == 6 < 9) {
-        //     // we set our current total to be whatever the random number is and not add it to invested amount
-        //     currentTotal = currentResult;
-        //     console.log("second if statement", currentTotal);
+        // if risk is 3 or less than, add a positive amount
+        if (currentRisk <= 5) {
+            console.log(entry.amount);
+            // we add our investment amount plus our current random amount
+            currentTotal = entry.amount = + currentResult;
+            console.log("first if statement", currentTotal)
+        } else if (currentResult == 6 < 9) {
+            // we set our current total to be whatever the random number is and not add it to invested amount
+            currentTotal = currentResult;
+            console.log("second if statement", currentTotal);
 
-        // } else if (currentResult >= 9) {
-        //     currentTotal = entry.amount - currentResult;
-        //     console.log("third if statement", currentTotal);
-        // };
+        } else if (currentResult >= 9) {
+            currentTotal = entry.amount -= currentResult;
+            console.log("third if statement", currentTotal);
+        };
 
-        // // add final total to user array of current round
-        // currentRound.push(currentTotal);
+        // add final total to user array of current round
+        currentRound.push(currentTotal);
 
         //add all rounds in currentRound array together to get total 
         // addRounds();
@@ -163,7 +166,14 @@ $("#user-submit").on("click", (event) => {
     depositOptions[4].amount = crypto;
 
 
-    alert("You've successfully submitted your investments!");
+    alert("You've successfully invested"
+        + ' $' + savings + ", "
+        + '$' + treasury + ", "
+        + '$' + bonds + ", "
+        + '$' + mutal + ", "
+        + '$' + crypto + ", " + '!');
+
+    determineResult();
 
     console.log('This is our investments', savings, treasury, bonds, mutal, crypto);
 
