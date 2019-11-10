@@ -30,9 +30,7 @@ function checkDeposits(id, deposit) {
         if (id == entry.name) {
             entry.amount = deposit;
         }
-
     });
-
 
 };
 
@@ -42,11 +40,16 @@ $("#user-submit").on("click", (event) => {
     event.preventDefault();
     console.log("Button clicked!");
 
-  let treasury = $("#treasury").val();
+    let treasury = document.getElementById("game-form").elements.item(0).value;
 
-  console.log(treasury);
+    // let treasury = $("#treasury").val().trim();
 
-    
+    // let treasuryID = $("#treasury").attribute("id").val();
+
+    console.log('This is our treasury deposit', treasury);
+    // console.log(treasuryID);
+
+
 
 
 }); 
