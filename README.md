@@ -14,9 +14,8 @@ The purpose of the game is to educate users about different investment options. 
 
 **Steps of the game:**
 The user chooses a name/type of business. They start with $3,000 in the bank.
-They can choose from five different investment options (ranked by their level of risk).
-Once they click on an option, their amount of money will be recalculated, based on fluctations in the stock market.
-At the end of the simulation (five rounds), it will tell you how much money you’ve accumulated.
+They fill out the percentage for the five different investment options.
+Then, they click the "deposit" button, and the computer will tell them how much money they own at the end."
 
 **Color indicators based on current dollar amount:**
 The font color changes for the amount of money that you have, based on how much or how little money you have.
