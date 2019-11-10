@@ -25,12 +25,12 @@ let depositOptions = [
         riskFactor: 4,
     },
     {
-        name: 'Mutal Funds',
+        name: 'Mutual Funds',
         amount: 0,
         riskFactor: 6,
     },
     {
-        name: 'Cyptocurrency',
+        name: 'Cryptocurrency',
         amount: 0,
         riskFactor: 9
     }
