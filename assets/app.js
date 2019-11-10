@@ -162,8 +162,8 @@ $("#user-submit").on("click", (event) => {
 
     depositOptions[4].amount = crypto;
 
-    
 
+    alert("You've successfully submitted your investments!");
 
     console.log('This is our investments', savings, treasury, bonds, mutal, crypto);
 
