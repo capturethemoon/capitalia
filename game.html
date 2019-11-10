@@ -1,31 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link rel="stylesheet" type="text/css" href="./style1.css"  />
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        </head>
-        <div class="jumbotron">
-          <h2>capitalia</h2>
-          <div class="jumbotron2">
-            <h6>Enter a percentage, then click Deposit.</h6>
-        <form action="/action_page.php">
-          Stocks:
-          <input name="firstname" type="text">
-          <br><br>
-            Bonds:
-          <input name="firstname" type="text">
-          <br><br>
-             Mutual Funds:
-          <input name="firstname" type="text">
-          <br><br>
-             Cryptocurrency:
-          <input name="firstname" type="text">
-          <br><br>
-             High interest savings account:
-          <input name="firstname" type="text">
-          <br><br>
-          <input type="submit" value="Deposit">
-        </form>
-          </div>
-        </div>
-        
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  >
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style1.css" />
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+  <div class="jumbotron">
+    <h2>capitalia</h2>
+    <div class="jumbotron2">
+      <h6>Enter a percentage, then click Deposit.</h6>
+      <form id="game-form">
+        Treasury:
+        <input name='treasury' type="text" id='treasury'>
+        <br><br>
+        Bank:
+        <input name='cash' type="text" id='cash'>
+        <br><br>
+        Bonds:
+        <input name='bonds' type='bonds'>
+        <br><br>
+        Mutal Funds:
+        <input name='mutal-funds' type="text" id='mutal-funds'>
+        <br><br>
+        Cyptocurrency:
+        <input name="Cyptocurrency" type="text" id="cyptro">
+        <br><br>
+        <input type="submit" value="deposit" id="user-submit">
+      </form>
+    </div>
+  </div>
+
+
+  <script src="assets/app.js"></script>
+</body>
+
+</html>
