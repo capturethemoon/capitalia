@@ -58,3 +58,7 @@ h6 {
 .bold {
   font-weight: bold;
 }
+
+input[type=text] {
+  width: 100%;
+}
